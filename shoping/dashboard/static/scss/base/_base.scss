@@ -1,0 +1,18 @@
+body{
+  font-family: "Segoa UI","Segoa WP","Segoa Regular", sans-serif;
+  font-size: $base-font-size;
+  line-height: 1.7em;
+  color : #666666
+}
+
+a{
+  color:#00aff0
+}
+
+ul,li{
+list-style: none;
+}
+
+input,textarea,button{
+  @include border-radius(0px);
+}

@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 
 
 class DashBoardView(TemplateView):
-    template_name = 'index1.html'
+    template_name = 'home.html'
 
     def get(self, request, *args, **kwargs):
         context = {}

@@ -1,0 +1,37 @@
+body {
+  font-family: "Segoa UI","Segoa WP","Segoa Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666; }
+
+a {
+  color: #00aff0; }
+
+ul, li {
+  list-style: none; }
+
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+.navbar a {
+  font-size: 20px;
+  letter-spacing: -0.5px; }
+
+.section_search {
+  margin-top: 65px;
+  background: #ddd; }
+
+.section-showcase {
+  height: 600px;
+  margin-top: 10px;
+}
+
+.category-section {
+  background: #f7f7f7; }
+
+/*# sourceMappingURL=main.css.map */

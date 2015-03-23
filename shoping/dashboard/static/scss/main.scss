@@ -1,15 +1,18 @@
 //base import
-@import "base/_base.scss";
-@import "base/_mixins.scss";
 @import "base/_variables.scss";
+@import "base/_mixins.scss";
+@import "base/_base.scss";
 @import "base/_normalise.scss";
 //import layouts
 @import "layouts/_footer.scss";
 @import "layouts/_header.scss";
 @import "layouts/_navigation.scss";
-@import "layouts/_normalise.scss";
+@import "layouts/_section.scss";
+//@import "layouts/_normalise.scss";
 // import modules
 @import "modules/_blocks.scss";
 @import "modules/_buttons.scss";
 @import "modules/_components.scss";
 @import "modules/_typography.scss";
+
+
