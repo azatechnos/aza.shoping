@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background:White;
   position: relative;
-  font-weight:400px;
+  font-weight: 400;
 }
 
 ul li {
@@ -70,14 +70,16 @@ a#scrollUp i{
 /*.header_top {*/
   /*background: none repeat scroll 0 0 #F0F0E9;*/
 /*}*/
-
+#header{
+  background: #000000;
+}
 .contactinfo ul li:first-child{
     margin-left: -15px;
 }
 
 .contactinfo ul li a{
   font-size: 12px;
-  color: #696763;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -218,10 +220,7 @@ a#scrollUp i{
 
 }
 
-.header-bottom .container  .row{
-    border-bottom: solid 2px;
-  /*background: #40403E;*/
-}
+
 
 .navbar-collapse.collapse{
   padding-left: 0;

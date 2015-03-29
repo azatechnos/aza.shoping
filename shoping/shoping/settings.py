@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dashboard',
+    'item',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -100,4 +101,5 @@ TEMPLATE_DIRS = (
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-FILE_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'category')
+CATEGORY_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'category')
+PRODUCT_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'product')
