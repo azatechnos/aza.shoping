@@ -72,6 +72,9 @@ a#scrollUp i{
 /*}*/
 #header{
   background: #000000;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
 }
 .contactinfo ul li:first-child{
     margin-left: -15px;
@@ -89,11 +92,8 @@ a#scrollUp i{
 }
 
 
-.social-icons ul li a {
-  border: 0 none;
-  border-radius: 0;
-  color: #696763;
-  padding:0px;
+.user-details ul li a {
+  color: #fff;
 }
 
 
@@ -190,7 +190,7 @@ a#scrollUp i{
 
 .shop-menu ul li a {
   background: #FFFFFF;
-  color: #696763;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -236,7 +236,7 @@ a#scrollUp i{
 }
 
 .mainmenu ul li a {
-	color: #696763;
+	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	font-weight: 300;
@@ -335,13 +335,16 @@ ul.sub-menu {
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
   }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
 }
+
+.user-details ul li a:hover{
+  background-color:#000000;
+  text-decoration: underline;
+}
+#slider-carousel{
+  margin-top: 200px;
+  }
+
   
 /*************************
 *******Footer CSS******

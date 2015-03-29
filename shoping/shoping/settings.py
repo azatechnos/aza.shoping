@@ -94,12 +94,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
-
+MEDIA_URL = '/media/'
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-CATEGORY_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'category')
-PRODUCT_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'product')
+
+# CATEGORY_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'category')
+# PRODUCT_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'product')
