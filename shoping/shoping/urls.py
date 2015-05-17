@@ -4,7 +4,7 @@ from shoping import settings
 
 urlpatterns = patterns('',
                        # Examples:
-                       url(r'^$', include('dashboard.urls'), name='home'),
+                       url(r'', include('account.urls')),
                        # url(r'^blog/', include('blog.urls')),
 
                        url(r'^admin/', include(admin.site.urls)),

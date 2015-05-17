@@ -1,41 +1,87 @@
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.css.map */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
 
-/*# sourceMappingURL=styles.css.map */
+body {
+  font-family: 'Roboto', sans-serif;
+  background:White;
+  position: relative;
+  font-weight: 400;
+}
+
+ul li {
+  list-style: none;
+}
+
+a:hover {
+outline: none;
+text-decoration:none;
+}
+
+a:focus {
+  outline:none;
+  outline-offset: 0;
+}
+
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover, 
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggle {
+  background-color: #000;
+}
+
+
+#header{
+  background: #000000;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+}
+.contactinfo ul li:first-child{
+    margin-left: -15px;
+}
+
+.contactinfo ul li a{
+  font-size: 12px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.contactinfo ul li a:hover{
+	background:inherit;
+}
+
+.user-details ul li a {
+  color: #000;
+
+}
+.user-details ul li{
+    padding:0px;
+
+}
+
+.user-details ul li a:hover{
+  text-decoration: underline;
+    background-color: #fff;
+}
+
+.user-details ul li a span {
+    padding: 0px 5px;
+    border-right: 1px solid #0083C9;
+
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+{% block content %}
+<br/>
+                {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">  <!-- singular -->
+                <a class="close" data-dismiss="alert">×</a>
+                {{ message|safe }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+  <div class="container">
+        <div >
+         <br/><br/>
+    
+         <center> <h3>Bad token</h3></center>
+        </div>
+            <p style="text-align:center;">The password reset link was invalid, possibly because it has already been used.  Please request a <a href="" >new password reset</a></p>
+              
+      </div>
+
+     
+    </div>
+
+    
+
+
+</body>
+{% endblock %}

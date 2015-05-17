@@ -38,7 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dashboard',
+    'account',
     'item',
+    'bootstrap3',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -104,3 +107,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # CATEGORY_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'category')
 # PRODUCT_UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'product')
+
+ACCOUNT_PASSWORD_RESET_REDIRECT_URL = "/login"
+
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
+LOGIN_URL = "login/"
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+SITE_DOMAIN = '127.0.0.1:8000'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'aza.technos@gmail.com'
+EMAIL_HOST_PASSWORD = 'Master2015$'
+DEFAULT_FROM_EMAIL = "goodluck admin<aza.technos@gmail.com>"

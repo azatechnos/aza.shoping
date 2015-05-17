@@ -1,8 +1,8 @@
 from django.db import models
 
 # Create your models here.
-from django.conf.global_settings import MEDIA_ROOT
-
+from django.conf import settings
+MEDIA_ROOT = settings.MEDIA_ROOT
 
 # class CategoryImage(models.Model):
 #     image = models.ImageField(upload_to=CATEGORY_UPLOAD_DIR)
@@ -16,16 +16,19 @@ class Category(models.Model):
     def __unicode__(self):
         return self.name
 
+class ProductImages(models.Model):
+    image = models.ImageField(upload_to=MEDIA_ROOT)
 
 class Product(models.Model):
     name = models.CharField(max_length=127)
-    image = models.ImageField(upload_to=MEDIA_ROOT)
+    main_image = models.ImageField(upload_to=MEDIA_ROOT)
     description = models.TextField()
     price = models.IntegerField()
     ideal_for = models.CharField(max_length=127)
     stone = models.CharField(max_length=127)
     material = models.CharField(max_length=127)
     category = models.ForeignKey(Category)
+    other_images = models.ManyToManyField(ProductImages)
 
     def __unicode__(self):
         return self.name
